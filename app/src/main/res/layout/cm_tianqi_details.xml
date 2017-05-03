@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llall"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/llHeader"
+        layout="@layout/common_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llHeader"
+        android:background="@drawable/tangsgbg" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#8f000000" />
+
+        <TextView
+            android:id="@+id/tvTempture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/sz_20"
+            android:singleLine="true"
+            android:text="5"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sz_55" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvTempture"
+            android:layout_marginTop="@dimen/sz_10"
+            android:layout_toRightOf="@+id/tvTempture"
+            android:text="o"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sz_13"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvQingyin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTempture"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:text="晴"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sz_18" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvQingyin"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/sz_30"
+            android:paddingRight="@dimen/sz_30"
+            android:paddingTop="@dimen/sz_30" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/sz_8"
+                android:paddingTop="@dimen/sz_8" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/feng"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sz_18" />
+
+                <TextView
+                    android:id="@+id/tvFeng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/feng"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sz_18" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#8fa3a3a3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/sz_8"
+                android:paddingTop="@dimen/sz_8" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/shidu"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sz_18" />
+
+                <TextView
+                    android:id="@+id/tvShidu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/feng"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sz_18" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#8fa3a3a3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/sz_8"
+                android:paddingTop="@dimen/sz_8" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/qiya"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sz_18" />
+
+                <TextView
+                    android:id="@+id/tvQiya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/feng"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sz_18" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#8fa3a3a3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/sz_8"
+                android:paddingTop="@dimen/sz_8" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/jiangshuiliang"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sz_18" />
+
+                <TextView
+                    android:id="@+id/tvJiangshuiliang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/feng"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sz_18" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#8fa3a3a3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/sz_8"
+                android:paddingTop="@dimen/sz_8" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/richu"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sz_18" />
+
+                <TextView
+                    android:id="@+id/tvRichu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/feng"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sz_18" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#8fa3a3a3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/sz_8"
+                android:paddingTop="@dimen/sz_8" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/riluo"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sz_18" />
+
+                <TextView
+                    android:id="@+id/tvRiluo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/feng"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sz_18" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#8fa3a3a3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/sz_8"
+                android:paddingTop="@dimen/sz_8" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/kongqizhiliang"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sz_18" />
+
+                <TextView
+                    android:id="@+id/tvKongqizhiliang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/feng"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sz_18" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/time"
+                android:drawablePadding="@dimen/sz_5"
+                android:text="@string/fenzhongfabu"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sz_16" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

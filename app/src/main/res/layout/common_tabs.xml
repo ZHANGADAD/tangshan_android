@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/sz_40"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/tabbg"
+    android:baselineAligned="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/llShouye"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvShouye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shiyuanhui"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sz_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llZaixian"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvZaixian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tianqi"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sz_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llService"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fuwu"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sz_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPersernal"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvPersonal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shezhi"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sz_16" />
+    </LinearLayout>
+
+</LinearLayout>

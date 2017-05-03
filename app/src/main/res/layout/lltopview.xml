@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/lldd11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+id/btRemenzixun"
+                android:layout_width="@dimen/sz_80"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="温度"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sz_15" />
+
+            <TextView
+                android:id="@+id/btYongchetoutiao"
+                android:layout_width="@dimen/sz_80"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sz_10"
+                android:gravity="center"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="风力"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sz_15" />
+
+            <TextView
+                android:id="@+id/btChemizhuanti"
+                android:layout_width="@dimen/sz_80"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sz_10"
+                android:gravity="center"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="降水"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sz_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lldd11"
+            android:orientation="horizontal" >
+
+            <View
+                android:id="@+id/remenView"
+                android:layout_width="@dimen/sz_80"
+                android:layout_height="1dip"
+                android:layout_marginLeft="@dimen/sz_10"
+                android:layout_marginRight="@dimen/sz_10"
+                android:background="@android:color/white" />
+
+            <View
+                android:id="@+id/toutiaoView"
+                android:layout_width="@dimen/sz_80"
+                android:layout_height="1dip"
+                android:background="@android:color/white"
+                android:paddingRight="@dimen/sz_10" />
+
+            <View
+                android:id="@+id/zhuantiView"
+                android:layout_width="@dimen/sz_80"
+                android:layout_height="1dip"
+                android:layout_marginLeft="@dimen/sz_10"
+                android:background="@android:color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPreAfter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/sz_20"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sz_15" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dip"
+        android:layout_marginTop="@dimen/sz_13" >
+
+        <com.tangshan.gui.view.chart.ScrollListenerHorizontalScrollView
+            android:id="@+id/llTopScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/sz_15" >
+
+            <view
+                android:id="@+id/llTop"
+                android:layout_width="wrap_content"
+                android:layout_height="250dip"
+                class="com.tangshan.gui.view.chart.LineView" />
+        </com.tangshan.gui.view.chart.ScrollListenerHorizontalScrollView>
+
+        <include
+            android:id="@+id/llScrollTop"
+            layout="@layout/moveview" />
+
+        <include
+            android:id="@+id/lineTop"
+            layout="@layout/linegrade" />
+    </RelativeLayout>
+
+</LinearLayout>

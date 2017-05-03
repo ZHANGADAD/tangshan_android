@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/commonbg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvYujingTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sz_8"
+            android:drawableLeft="@drawable/yujingicon"
+            android:drawablePadding="@dimen/sz_8"
+            android:padding="@dimen/sz_10"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sz_18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/dividercolor" />
+
+        <TextView
+            android:id="@+id/tvYujingTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sz_5"
+            android:layout_marginTop="@dimen/sz_5"
+            android:paddingLeft="@dimen/sz_10"
+            android:paddingRight="@dimen/sz_10"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sz_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/dividercolor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sz_15"
+            android:layout_marginTop="@dimen/sz_20"
+            android:drawableLeft="@drawable/dddd"
+            android:drawablePadding="@dimen/sz_10"
+            android:paddingLeft="@dimen/sz_10"
+            android:singleLine="true"
+            android:text="预警内容"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sz_18" />
+
+        <TextView
+            android:id="@+id/tvYujingContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/sz_10"
+            android:singleLine="false"
+            android:textColor="#99ffffff"
+            android:textSize="@dimen/sz_16" />
+
+        <TextView
+            android:id="@+id/tvFangyu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sz_15"
+            android:layout_marginTop="@dimen/sz_20"
+            android:drawableLeft="@drawable/dddd"
+            android:paddingLeft="@dimen/sz_10"
+            android:singleLine="true"
+            android:text="防御指南"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sz_18"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvFangyuContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/sz_10"
+            android:singleLine="false"
+            android:textColor="#99ffffff"
+            android:textSize="@dimen/sz_16"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

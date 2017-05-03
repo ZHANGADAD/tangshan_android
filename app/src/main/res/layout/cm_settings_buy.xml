@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/common_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:background="@drawable/commonbg"
+        android:orientation="vertical"
+        android:padding="@dimen/sz_10" >
+
+        <RelativeLayout
+            android:id="@+id/btBuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/sz_5"
+            android:paddingTop="@dimen/sz_5" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="购买服务"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sz_18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/sz_15"
+                android:background="@drawable/greenbg"
+                android:gravity="center"
+                android:padding="@dimen/sz_5"
+                android:text="立即购买"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sz_16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/dividercolor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/sz_5"
+            android:paddingTop="@dimen/sz_5"
+            android:singleLine="false"
+            android:text="购买唐山气象局气象服务,可以获得包括天气预报,往日实况,气象预警,生活气象指数,高速交通气象,农业气象,旅游气象,世园会气象等全部服务,帮助您更好做出生活出行计划。"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sz_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="@dimen/sz_20"
+            android:background="@color/dividercolor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/sz_5"
+            android:paddingTop="@dimen/sz_5"
+            android:singleLine="false"
+            android:text="注:未购买条件下,可以试用全部功能一个月,超期后部分功能无法使用"
+            android:textColor="#99ffffff"
+            android:textSize="@dimen/sz_14" />
+    </LinearLayout>
+
+</RelativeLayout>

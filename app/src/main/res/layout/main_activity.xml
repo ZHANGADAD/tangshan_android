@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llTab"
+        android:background="@android:color/transparent" />
+
+    <com.tangshan.gui.view.CMTableView
+        android:id="@+id/llTab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sz_40"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

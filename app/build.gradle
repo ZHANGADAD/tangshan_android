@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    flatDir {
+        dir 'libs'
+    }
+}
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.tangshan.gui"
+        minSdkVersion 9
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.1"
+        buildConfigField "Boolean", "LogDebug", "false"
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    signingConfigs{
+        releaseSign{
+            storeFile file("../tangshan.keystore")
+            storePassword KEYSTORE_PASSWORD
+            keyAlias "tangshan"
+            keyPassword KEYSTORE_PASSWORD
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.releaseSign
+            minifyEnabled false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            buildConfigField "Boolean", "LogDebug", "true"
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'cz.msebera.android:httpclient:4.3.6'
+    compile 'com.android.support:support-v4:25.1.1'
+    compile project(path: ':Sharesdk')
+}

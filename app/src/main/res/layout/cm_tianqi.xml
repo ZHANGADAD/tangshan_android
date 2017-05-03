@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/common_header" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:background="@drawable/commonbg" />
+
+    <com.tangshan.gui.view.CirclePageIndicator
+        android:id="@+id/pageIndicator"
+        app:fillColor="@android:color/white"
+        app:pageColor="#99ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/viewPager"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dip"
+        android:padding="3dip" />
+
+</RelativeLayout>

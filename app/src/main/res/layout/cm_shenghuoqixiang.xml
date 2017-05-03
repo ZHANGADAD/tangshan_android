@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/lllll"
+        layout="@layout/common_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/commonbg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/btRemenzixun"
+                android:layout_width="@dimen/sz_80"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="今天"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sz_15" />
+
+            <TextView
+                android:id="@+id/btYongchetoutiao"
+                android:layout_width="@dimen/sz_80"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sz_10"
+                android:gravity="center"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="明天"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sz_15" />
+
+            <TextView
+                android:id="@+id/btChemizhuanti"
+                android:layout_width="@dimen/sz_80"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sz_10"
+                android:gravity="center"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="后天"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sz_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lldd11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dividercolor"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <View
+                android:id="@+id/remenView"
+                android:layout_width="@dimen/sz_80"
+                android:layout_height="1dip"
+                android:layout_marginLeft="@dimen/sz_10"
+                android:layout_marginRight="@dimen/sz_10"
+                android:background="@android:color/white" />
+
+            <View
+                android:id="@+id/toutiaoView"
+                android:layout_width="@dimen/sz_80"
+                android:layout_height="1dip"
+                android:background="@android:color/white"
+                android:paddingRight="@dimen/sz_10" />
+
+            <View
+                android:id="@+id/zhuantiView"
+                android:layout_width="@dimen/sz_80"
+                android:layout_height="1dip"
+                android:layout_marginLeft="@dimen/sz_10"
+                android:background="@android:color/white" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvJintian"
+            style="@style/listviewstyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ListView
+            android:id="@+id/lvMingtian"
+            style="@style/listviewstyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/lvHoutian"
+            style="@style/listviewstyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

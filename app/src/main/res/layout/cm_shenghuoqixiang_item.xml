@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/sz_80"
+        android:layout_height="@dimen/sz_80"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/sz_10"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView"
+        android:paddingLeft="@dimen/sz_10"
+        android:paddingTop="@dimen/sz_10"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sz_18" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvContent"
+        android:layout_toRightOf="@+id/imageView"
+        android:paddingBottom="@dimen/sz_10"
+        android:paddingLeft="@dimen/sz_10"
+        android:paddingTop="@dimen/sz_10"
+        android:textColor="#99ffffff"
+        android:textSize="@dimen/sz_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dividercolor" />
+
+</RelativeLayout>

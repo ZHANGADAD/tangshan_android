@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">唐山气象</string>
+    <string name="tanshanqixiangju">唐山气象局</string>
+    <string name="net_timeout_str">网络连接超时，请稍后再试</string>
+    <string name="net_exception_str">网络连接异常，请稍后再试</string>
+    <string name="net_err_str">联网失败了，请稍后再试</string>
+    <string name="authfailure">授权失败,请稍后再试</string>
+    <string name="shiyuanhui">世园会</string>
+    <string name="tianqi">天气</string>
+    <string name="fuwu">服务</string>
+    <string name="shezhi">设置</string>
+    <string name="exit_info">再按一次退出应用</string>
+    <string name="feng">风</string>
+    <string name="shidu">湿度</string>
+    <string name="qiya">气压</string>
+    <string name="jiangshuiliang">降水量</string>
+    <string name="richu">日出</string>
+    <string name="riluo">日落</string>
+    <string name="kongqizhiliang">空气质量</string>
+    <string name="fenzhongfabu">5分钟前发布</string>
+
+</resources>

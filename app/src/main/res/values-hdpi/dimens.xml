@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="sz_5">5dip</dimen>
+    <dimen name="sz_8">8dip</dimen>
+    <dimen name="sz_10">10dip</dimen>
+    <dimen name="sz_12">12dip</dimen>
+    <dimen name="sz_13">13dip</dimen>
+    <dimen name="sz_14">14dip</dimen>
+    <dimen name="sz_15">15dip</dimen>
+    <dimen name="sz_16">16dip</dimen>
+    <dimen name="sz_17">17dip</dimen>
+    <dimen name="sz_18">18dip</dimen>
+    <dimen name="sz_19">19dip</dimen>
+    <dimen name="sz_20">20dip</dimen>
+    <dimen name="sz_21">21dip</dimen>
+    <dimen name="sz_22">22dip</dimen>
+    <dimen name="sz_23">23dip</dimen>
+    <dimen name="sz_30">30dip</dimen>
+    <dimen name="sz_55">50dp</dimen>
+    <dimen name="sz_40">45dip</dimen>
+    <dimen name="sz_100">100dip</dimen>
+    <dimen name="sz_80">50dip</dimen>
+
+</resources>
