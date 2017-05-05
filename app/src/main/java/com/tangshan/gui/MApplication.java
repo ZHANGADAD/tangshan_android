@@ -18,6 +18,7 @@ import com.tangshan.gui.preference.CMPreference;
 import com.tangshan.gui.util.CMLog;
 import com.tangshan.gui.util.Util;
 import com.umeng.fb.push.FeedbackPush;
+import com.umeng.message.IUmengRegisterCallback;
 import com.umeng.message.PushAgent;
 
 import java.util.List;
@@ -25,7 +26,7 @@ import java.util.List;
 public class MApplication extends Application {
 
     private static MApplication instance;
-    private PushAgent mPushAgent;
+    public PushAgent mPushAgent;
     public LocationService locationService;
     private CMPreference preference;
 
@@ -125,7 +126,17 @@ public class MApplication extends Application {
         FeedbackPush.getInstance(this).init(false);
         mPushAgent = PushAgent.getInstance(this);
         mPushAgent.setDebugMode(false);
-        mPushAgent.enable();
+        mPushAgent.register(new IUmengRegisterCallback() {
+            @Override
+            public void onSuccess(String s) {
+
+            }
+
+            @Override
+            public void onFailure(String s, String s1) {
+
+            }
+        });
     }
 
     private void initImageLoader() {

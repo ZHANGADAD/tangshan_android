@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -30,11 +29,8 @@ import com.tangshan.gui.view.CMTableView;
 import com.umeng.analytics.AnalyticsConfig;
 import com.umeng.analytics.MobclickAgent;
 import com.umeng.fb.FeedbackAgent;
-import com.umeng.message.UmengRegistrar;
 import com.umeng.socialize.sso.UMSsoHandler;
-import com.umeng.update.UpdateConfig;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 import cz.msebera.android.httpclient.Header;
@@ -111,7 +107,7 @@ public class MainActivity extends BaseActivity {
     public void pushInfo() {
         RequestParams params = new RequestParams();
         params.put("telno", getPhone());
-        params.put("device_token", UmengRegistrar.getRegistrationId(this));
+        params.put("device_token", MApplication.getInstance().mPushAgent.getRegistrationId());
         params.put("latitude", preference.getLatitude());
         params.put("longitude", preference.getLongtitude());
         params.put("platform", "android");
